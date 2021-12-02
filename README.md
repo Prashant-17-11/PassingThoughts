@@ -65,6 +65,12 @@ Inside of addThought(), we'll call setThoughts() with a function that returns a 
 
 Add this function between the end of the useState() call (the line ending with ]);) and the return.
 
+## Task 3
+
+Now we have a function that'll update the state, but we need to use it. Specifically, let's pass it to the AddThoughtForm component as a prop.
+
+In App.js, find where AddThoughtForm is rendered. Pass a prop named addThought and give our newly created addThought() function as its value.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

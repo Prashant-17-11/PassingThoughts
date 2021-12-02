@@ -28,7 +28,7 @@ function App() {
         <h1>Passing Thoughts</h1>
       </header>
       <main>
-        <AddThoughtForm />
+        <AddThoughtForm addThought={addThought} />
         <ul className="thoughts">
           {thoughts.map((thought) => (
             <Thought key={thought.id} thought={thought} />
