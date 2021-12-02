@@ -89,6 +89,18 @@ Finally, you'll need to connect these two things to the input. Pass text in a pr
 
 Now we're storing the state of the input!
 
+## Task 5
+
+Now that we have the input's state stored, we will need to create a new thought object when the form is submitted. Handling the form submission event is the first step of doing that.
+
+Create a new function to handle the form submission called hadleSubmit(). It will take the event as an argument (just like how handleTextChange() does).
+
+To prevent the form from refreshing the page, call event.preventDefault() inside handleSubmit(). This prevents the browser from performing its default behaviour when a form is submitted.
+
+Finally, add the submit handler to the form by passing onSubmit={handleSubmit}.
+
+Once you've done this, the form should no longer refresh the page. (Nothing else will happen either, but we'll fix that soon).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

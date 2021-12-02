@@ -4,12 +4,16 @@ import { generateId, getNewExpirationTime } from "./utilities.js";
 export function AddThoughtForm(props) {
   const [text, setText] = useState("");
 
-  const handleTextChange = (e) => {
-    setText(e.target.value);
+  const handleTextChange = (event) => {
+    setText(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
   };
 
   return (
-    <form className="AddThoughtForm">
+    <form className="AddThoughtForm" onSubmit={handleSubmit}>
       <input
         type="text"
         aria-label="What's on your mind?"
