@@ -1,5 +1,5 @@
 import React from "react";
-import { generateId, getNewExpirationTime } from "utilities.js";
+import { generateId, getNewExpirationTime } from "./utilities.js";
 
 export function AddThoughtForm(props) {
   return (
