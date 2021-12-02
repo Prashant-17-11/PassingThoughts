@@ -71,6 +71,24 @@ Now we have a function that'll update the state, but we need to use it. Specific
 
 In App.js, find where AddThoughtForm is rendered. Pass a prop named addThought and give our newly created addThought() function as its value.
 
+## Task 4
+
+Now that we're passing addThought() into the AddThoughtForm component, it's time for us to make that component actually call this function.
+
+AddThoughtForm will have some state. Specifically, it'll hold the value of the text input, and when the user submits the form, we'll take that input and use it in a call to addThought().
+
+Open up AddThoughtForm.js.
+
+On the first line, we'll need to import useState() and React. Update the import to import both React and useState().
+
+Next, inside of AddThoughtForm, set up the intial state of the text input as an empty string.
+
+After you have done that, you'll need to write a function called handleTextChange() that will be called when the input changes. It will take the event as an argument, and will call setText() to update the state.
+
+Finally, you'll need to connect these two things to the input. Pass text in a prop called value, and pass handleTextChange() in a prop called onChange().
+
+Now we're storing the state of the input!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
