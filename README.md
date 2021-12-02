@@ -57,6 +57,14 @@ When we create neww thought objects, we'll do something very similar to this. Le
 
 ## Task 2
 
+Open the App component in App.js. You can see that we've already set up the array of thoughts in a variable called thoughts, using the useState() hook. We've also got setThoughts(), a function we can call to update the list of thoughts. Let's wire these things up so that users can add new thoughts.
+
+First, we'll need to write a new function inside of App(), called addThought(). It will take a single argument, thought, and it will put itself of the thoughts array with setThoughts().
+
+Inside of addThought(), we'll call setThoughts() with a function that returns a new state: the array with the new thought at the front.
+
+Add this function between the end of the useState() call (the line ending with ]);) and the return.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
