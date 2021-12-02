@@ -1,3 +1,9 @@
+# Passing Thoughts
+
+    This is a project made under Codecademy React 101 course for applying the knowledge of Hooks: useState and useEffect
+
+##
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
