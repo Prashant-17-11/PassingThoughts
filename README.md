@@ -146,6 +146,12 @@ Under addThought(), create a new function called removeThought(). It will take t
 
 To do this, you'll call thoughts.fileter() to filter out the thought we want to remove.
 
+## Task 10
+
+Once this is done, all you'll need to do is pass this new function as a prop to the Thought component. Add a new prop called removeThought with the newly created removeThought() function as its value.
+
+If you've done this successfully, you should now be able to manually remove thoughts by clicking the delete button next to each thought.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
