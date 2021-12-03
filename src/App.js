@@ -22,6 +22,12 @@ function App() {
     setThoughts((thoughts) => [thought, ...thoughts]);
   };
 
+  const removeThought = (thoughtIdToRemove) => {
+    setThoughts((thoughts) =>
+      thoughts.filter((thought) => thought.id !== thoughtIdToRemove)
+    );
+  };
+
   return (
     <div className="App">
       <header>

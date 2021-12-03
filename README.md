@@ -125,6 +125,27 @@ There's just one thing left to do here: if the user hasn't typed anything but th
 
 To fix this, only call addThought() if the user hasn't typed anything yet. You'll use an if statement to check the length of the text variable before creating and adding a new thought object. (Make sure to always call event.preventDefault(), though, even if the user hasn't typed anything.)
 
+Manually Deleting Thoughts
+
+## Task 9
+
+The app should feature two ways to delete thoughts:
+
+<ol>
+    <li>Manual deletion, when the user clicks the delete button.</li>
+    <li>Automatic deltetion after 15 seconds.</li>
+</ol>
+
+Let's start with the first task. It will help us build the scaffolding for the second.
+
+Open App.js.
+
+Just like we added a function to add new thoughts, we will need to create a function to remove them, too.
+
+Under addThought(), create a new function called removeThought(). It will take the ID of the thought we want to remove in an argument called thoughtIdToRemove, and it will call setThougths() to remove the thought.
+
+To do this, you'll call thoughts.fileter() to filter out the thought we want to remove.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
