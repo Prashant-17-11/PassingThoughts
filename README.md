@@ -8,50 +8,52 @@ Adding thoughts
 
 ## Task 1
 
-    Run the app and take a look at what we have so far.
+Run the app and take a look at what we have so far.
 
-    The app's structure is there, but...well, it doesn't actually work! There are three major missing pieces right now:
-    <ol>
-        <li>If you try to add a new thought, it refreshes the whole page and doesn't do anything.</li>
-        <li>If you try to delete a thought manually, it crashes!</li>
-        <li>Thoughts never disappear, defeating the whole point of the app.</li>
-    </ol>
+The app's structure is there, but...well, it doesn't actually work! There are three major missing pieces right now:
 
-    Before we start, let's talk about the main piece of state that the app stores: an array of thought objects. Each of those objects will have three properties:
-    <ul>
-        <li>id, a unique ID for this thought</li>
-        <li>text, the thought's text</li>
-        <li>expiresAt, the time that the thought expires, represented as a number</li>
-    </ul>
+<ol>
+    <li>If you try to add a new thought, it refreshes the whole page and doesn't do anything.</li>
+    <li>If you try to delete a thought manually, it crashes!</li>
+    <li>Thoughts never disappear, defeating the whole point of the app.</li>
+</ol>
 
-    Take a look at App.js and you'll see that we're defining two starter thoughts like this,
-        const [thoughts, setThoughts] = useState([
+Before we start, let's talk about the main piece of state that the app stores: an array of thought objects. Each of those objects will have three properties:
 
-<br/> {
-<br/> id: generateId(),
-<br/> text: 'This is a place for your passing thoughts.',
-<br/> expiresAt: getNewExpirationTime(),
-<br/> },
-<br/> {
-<br/> id: generateId(),
-<br/> text: "They'll be removed after 15 seconds.",
-<br/> expiresAt: getNewExpirationTime(),
-<br/> },
-<br/> ]);
+<ul>
+    <li>id, a unique ID for this thought</li>
+    <li>text, the thought's text</li>
+    <li>expiresAt, the time that the thought expires, represented as a number</li>
+</ul>
+
+Take a look at App.js and you'll see that we're defining two starter thoughts like this,
+const [thoughts, setThoughts] = useState([
+
+     {
+     id: generateId(),
+     text: 'This is a place for your passing thoughts.',
+     expiresAt: getNewExpirationTime(),
+     },
+     {
+     id: generateId(),
+     text: "They'll be removed after 15 seconds.",
+     expiresAt: getNewExpirationTime(),
+     },
+     ]);
 
 That will set the state to something like this:
-<br/>[
-<br/> {
-<br/> id: 0,
-<br/> text: 'This is a place for your passing thoughts.',
-<br/> expiresAt: 1600624968405,
-<br/> },
-<br/> {
-<br/> id: 1,
-<br/> text: "They'll be removed after 15 seconds.",
-<br/> expiresAt: 1600624968405,
-<br/> },
-<br/>]
+[
+{
+id: 0,
+text: 'This is a place for your passing thoughts.',
+expiresAt: 1600624968405,
+},
+{
+id: 1,
+text: "They'll be removed after 15 seconds.",
+expiresAt: 1600624968405,
+},
+]
 
 When we create neww thought objects, we'll do something very similar to this. Let's get started!
 
