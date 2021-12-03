@@ -18,6 +18,8 @@ export function AddThoughtForm(props) {
     };
 
     props.addThought(thought);
+
+    setText("");
   };
 
   return (

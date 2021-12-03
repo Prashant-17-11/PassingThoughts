@@ -113,6 +113,12 @@ If you're not sure how to create a thought object, refer to how it's done in App
 
 Once this is done, you should be able to submit the form and see the new thought appear on the screen.
 
+## Task 7
+
+Thought we are creating new thoughts, you might notice a piece of the user experience that feels a little unintuitive: the input isn't cleared when you submit the form. That means that whatever you typed stays around, even though it probably shouldn't.
+
+Clear the input's text after adding a new thought.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
