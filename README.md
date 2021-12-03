@@ -1,8 +1,8 @@
 # Passing Thoughts
 
-    This is a project made under Codecademy React 101 course for applying the knowledge of Hooks: useState and useEffect.
+This is a project made under Codecademy React 101 course for applying the knowledge of Hooks: useState and useEffect.
 
-    In this place we will build a place for our passing thoughts which disappear just after 15 seconds.
+In this place we will build a place for our passing thoughts which disappear just after 15 seconds.
 
 Adding thoughts
 
