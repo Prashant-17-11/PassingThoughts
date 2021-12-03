@@ -119,6 +119,12 @@ Thought we are creating new thoughts, you might notice a piece of the user exper
 
 Clear the input's text after adding a new thought.
 
+## Task 8
+
+There's just one thing left to do here: if the user hasn't typed anything but they submit the form anyway, an empty thought will be created. We all have empty thoughts from time to time, but we probably don't want to add those to our app.
+
+To fix this, only call addThought() if the user hasn't typed anything yet. You'll use an if statement to check the length of the text variable before creating and adding a new thought object. (Make sure to always call event.preventDefault(), though, even if the user hasn't typed anything.)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
