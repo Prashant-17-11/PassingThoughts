@@ -181,6 +181,14 @@ Make sure you remember two things:
 
 Once this is done, you should see "Time has passed!" alerts after 15 seconds.
 
+## Task 13
+
+There's just one thing left to do: replace that alert() with a call to removeThougth(). This should already be passed in as props, so you'll just need to delete the alert() line and replace it with a call to removeThought().
+
+You'll need to call removeThought() with this thought's ID, which you can get with thought.id.
+
+Once that's done, try adding some thoughts and watch them disappear... it's just like your brain, but you built it with React.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

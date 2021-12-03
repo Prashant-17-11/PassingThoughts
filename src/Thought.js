@@ -6,7 +6,7 @@ export function Thought(props) {
   useEffect(() => {
     const timeRemaining = thought.expiresAt - Date.now();
     const timeout = setTimeout(() => {
-      alert("Time has passed!");
+      props.removeThought(thought.id);
     }, timeRemaining);
     return () => {
       clearTimeout(timeout);
