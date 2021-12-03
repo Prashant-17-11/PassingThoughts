@@ -152,6 +152,18 @@ Once this is done, all you'll need to do is pass this new function as a prop to 
 
 If you've done this successfully, you should now be able to manually remove thoughts by clicking the delete button next to each thought.
 
+Letting Thoughts Drift Away
+
+## Task 11
+
+The app is getting close, but we're still missing the core feature: making thoughts disappear.
+
+When a Thought component is rendered, we want to start a countdown. Once the countdown expires, we want to call removeThought(). We'll do this with an effect hook.
+
+Open Thought.js.
+
+Start by importing useEffect() from React.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
