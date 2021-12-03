@@ -164,6 +164,23 @@ Open Thought.js.
 
 Start by importing useEffect() from React.
 
+## Task 12
+
+Let's start by setting a timer in the Thought component with setTimeout().
+
+Using the useEffect() hook, call setTimeout(). The first argument should be a function that calls alert('Time has passed!') (or any sample text you want - we'll remove it later). It should happen when the thougt expires. You might calculate that like this:
+
+    const timeRemaining = thought.expiresAt - Date.now();
+
+Make sure you remember two things:
+
+<ol>
+    <li>Return a function that clears the timeout when you're done! It's always good practice to clean up your effects.</li>
+    <li>Add [thought] as a dependency, in the second argument to useEffect(). You want to re-run the effect every time the thought is different. </li>
+</ol>
+
+Once this is done, you should see "Time has passed!" alerts after 15 seconds.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
